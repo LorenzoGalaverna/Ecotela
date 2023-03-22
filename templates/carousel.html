@@ -7,16 +7,21 @@
       crossorigin="anonymous"></script>
 </head>
 
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="width: 750px;margin-right: auto;margin-left: auto;">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="width: 1150px;margin-right: auto;margin-left: auto;">
     <div class="carousel-inner">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
       <div class="carousel-item active">
-        <img src="{% static 'images/1.jpg' %}" class="d-block w-100">
+        <img id="0" src="{% static 'images/1.jpg' %}" class="d-block w-100" aria-label="Placeholder: Third slide">
       </div>
       <div class="carousel-item">
-        <img src="{% static 'images/2.jpg' %}" class="d-block w-100" alt="">
+        <img id="1" src="{% static 'images/2.jpg' %}" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="{% static 'images/3.jpg' %}" class="d-block w-100" alt="">
+        <img id="2" src="{% static 'images/3.jpg' %}" class="d-block w-100">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
