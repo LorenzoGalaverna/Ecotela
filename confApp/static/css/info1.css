@@ -1,0 +1,17 @@
+.imagen-div {
+    width: 200%;
+}
+
+.imagen {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.info {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
